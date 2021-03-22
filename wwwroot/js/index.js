@@ -49,8 +49,8 @@ $(document).ready(function () {
                 },
                 datatype: "json"
             })).then(function (data) {
-                if (data != null && data.RegisterMessage!="") {
-                    alert("The user was registered");
+                if (data != null && data.registerMessage!="") {
+                    alert(data.registerMessage);
                 }
             });
         }
